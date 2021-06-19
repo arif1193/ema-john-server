@@ -73,7 +73,4 @@ app.post('/addOrder',(req, res)=>{
 });
 
 
-
-
-
-app.listen(port)
+app.listen(precess.env.PORT || port)
