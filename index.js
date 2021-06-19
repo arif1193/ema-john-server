@@ -16,6 +16,9 @@ app.use(cors());
 
 const port = 5000
 
+app.get('/',(req, res)=>{
+    res.send('Hi This is me BRO')
+})
 // console.log(process.env.DB_NAME);
 
 
@@ -60,7 +63,7 @@ app.post('/productsByKeys',(req, res)=>{
     .toArray( (err, documents)=>{
         res.send(documents);
     })
-    
+
 })
 
 app.post('/addOrder',(req, res)=>{
